@@ -10,6 +10,12 @@ class App extends React.Component {
       { name: 'bread', checked: false }
     ]
   }
+  handleDeleteItem(item) {
+    console.log('del', {item});
+  }
+  handleCheckItem(item) {
+    console.log('check', {item});
+  }
   render() {
     return (
       <>
@@ -21,7 +27,7 @@ class App extends React.Component {
             <AddItemForm />
           </section>
           <section>
-            <ShoppingList items={this.state.shoppingItems} />
+            <ShoppingList items={this.state.shoppingItems} onDeleteItem={this.handleDeleteItem} onCheckItem={this.handleCheckItem} />
           </section>
         </main>
       </>
