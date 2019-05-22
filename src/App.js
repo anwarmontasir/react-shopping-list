@@ -1,6 +1,7 @@
 import React from 'react';
 import AddItemForm from './shopping-list/AddItemForm';
 import ShoppingList from './shopping-list/ShoppingList';
+import './App.css';
 
 class App extends React.Component {
   state = {
@@ -37,7 +38,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <>
+      <div id="app">
         <header>
           <h1>Shopping List</h1>
         </header>
@@ -49,7 +50,7 @@ class App extends React.Component {
             <ShoppingList items={this.state.shoppingItems} onDeleteItem={this.handleDeleteItem} onCheckItem={this.handleCheckItem} />
           </section>
         </main>
-      </>
+      </div>
     );
   }
 }

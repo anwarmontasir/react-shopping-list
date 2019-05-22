@@ -1,0 +1,18 @@
+li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #888;
+}
+h2 {
+    margin-bottom: .5rem;
+    font-size: 1.25rem;
+}
+button.listBtn {
+    margin-right: 5px;
+    font-size: .8rem;
+}
+.checked {
+    text-decoration-line: line-through;
+    text-decoration-color: salmon;
+    text-decoration-style: wavy;
+}

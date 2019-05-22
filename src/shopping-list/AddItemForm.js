@@ -1,9 +1,11 @@
 import React from 'react';
+import './AddItemForm.css';
 
 export default class AddItemForm extends React.Component {
     onSubmitForm = (e) => {
         e.preventDefault();
         this.props.onAddItem(e.target.itemToAdd.value);
+        e.target.itemToAdd.value = '';
     }
     render() {
         return (

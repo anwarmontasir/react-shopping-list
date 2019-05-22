@@ -1,0 +1,21 @@
+form {
+    display: flex; 
+    border-bottom: 1px dotted #888;
+    margin-bottom: 1rem;
+}
+input[type="text"] {
+    width: calc(100% - 90px);
+    padding: 0 .5rem;
+    height: 32px;
+    margin: 0 10px 2rem 0;
+    font-size: .9rem;
+}
+button[type="submit"] {
+    font-size: .9rem;
+    width: 80px;
+    height: 32px;
+    border: none;
+    color: #fff;
+    background: linear-gradient(#07d, #039);
+    border-radius: 6px;
+}
